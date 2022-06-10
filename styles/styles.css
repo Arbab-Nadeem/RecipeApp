@@ -1,0 +1,289 @@
+/* Base Styles */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background: #f1f1f5;
+	color: #4e4d4d;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.6rem;
+}
+
+button {
+	cursor: pointer;
+}
+
+a {
+	color: #424c88;
+}
+
+span {
+	color: #202020;
+	margin:0 5px;
+}
+
+p {
+	display: flex;
+	margin: 1em;
+}
+.heading-space {
+	padding: 0.5em 0.2em;
+}
+.text-space {
+	padding: 0.5em 0.4em;
+}
+.heading-outer-space {
+	margin: 0.5em 0.2em;
+}
+.text-outer-space {
+	margin: 1em 0.4em;
+}
+
+/* Container */
+
+.container {
+	max-width: 60rem;
+	margin: 0 auto;
+	padding: 0 1.6rem;
+}
+
+/* Header */
+
+.header {
+	background: #424c88;
+	color: white;
+	padding: 1.6rem 0;
+}
+
+.header__title {
+	font-size: 3.2rem;
+	margin-bottom: 0.4rem;
+}
+
+.header__subtitle {
+	/* color: #777; */
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+
+/* Actions Bar */
+
+.actions {
+	background-color: #d1d1da;
+	border-bottom: 1px solid #dedfe0;
+	color: #333333;
+	padding: 1rem;
+}
+
+.actions__container {
+	align-items: center;
+	display: flex;
+	max-width: 60rem;
+	margin: 0 auto;
+	min-height: 3rem;
+	padding: 0 1.6rem;
+}
+
+.actions__container--spaced {
+	justify-content: space-between;
+}
+
+/* Form Inputs */
+
+.input {
+	border: none;
+	font-size: 1.4rem;
+	font-weight: 300;
+	height: 3rem;
+	margin-right: 1.6rem;
+	margin-bottom: 1rem;
+	padding: 0.4rem 0.8rem;
+}
+
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+textarea::placeholder {
+	border: none;
+	font-size: 1.4rem;
+	font-weight: 300;
+	height: 3rem;
+	margin-right: 1.4rem;
+	padding: 0.4rem 0.8rem;
+	font-family: Arial;
+	color: grey;
+	font-style: italic;
+}
+
+.checkbox {
+	margin-right: 1em;
+}
+
+.text-element {
+	margin-right: 1em;
+}
+
+.remove-element {
+	border: none;
+	color: #9b9898ef;
+	font-size: 1.3rem;
+	padding: 0.3rem;
+	transition:color 0.3s ease;
+}
+.remove-element:hover{
+	color:#b61717;
+	text-decoration: underline;
+}
+
+.button {
+	background: #424c88;
+	border: none;
+	border-bottom: 2px solid #424c88;
+	color: white;
+	font-size: 1.4rem;
+	font-weight: 300;
+	padding: 0.8rem;
+	transition: background 0.3s ease, color 0.3s ease;
+	margin: 1em 0em;
+	border-radius: 5px;
+}
+
+.button-danger {
+	background: #b61717;
+	border: none;
+	border-bottom: 2px solid #bb2323;
+	color: white;
+	font-size: 1.4rem;
+	font-weight: 300;
+	padding: 0.8rem;
+	transition: background 0.3s ease, color 0.3s ease;
+	border-radius: 5px;
+	margin: 2.5em 0em;
+}
+
+.button--add {
+	background: #424c88;
+	border: none;
+	border-bottom: 2px solid #4452a0;
+	color: white;
+	font-size: 1.4rem;
+	font-weight: 300;
+	padding: 0.8rem;
+	transition: background 0.3s ease, color 0.3s ease;
+	margin-top: 1rem;
+}
+
+.button:hover {
+	background: #424c88e8;
+}
+
+.button--secondary {
+	background: #888888;
+	border-bottom: 2px solid #717171;
+}
+
+.button--secondary:hover {
+	background: #6e6e6e;
+}
+
+.button--text {
+	letter-spacing: 1px;
+	background: none;
+	border: none;
+	color: #636060;
+}
+
+.button--text:hover {
+	background: none;
+	color: #d60101;
+	text-decoration: underline;
+}
+
+/* Note editor */
+
+.title-input {
+	border: 1px solid #dedfe0;
+	font-size: 1.7rem;
+	font-weight: 300;
+	display: block;
+	margin: 2.4rem 0;
+	padding: 0.8rem;
+	width: 100%;
+}
+
+.body-input {
+	border: 1px solid #dedfe0;
+	font-family: inherit;
+	font-size: 1.6rem;
+	font-weight: 300;
+	display: block;
+	margin: 2.4rem 0;
+	min-height: 15rem;
+	padding: 0.8rem;
+	width: 100%;
+}
+
+/* Note List Item */
+
+.list-item {
+	text-decoration: none;
+	color: #333;
+	cursor: pointer;
+
+	background: #d6d6d6;
+	border: 1px solid #c4c1be;
+	margin: 1.6rem 0;
+	padding: 0 1rem;
+	display: block;
+	transition: background 0.3s ease;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.list-item__container {
+	display: flex;
+	font-size: 1.8rem;
+	font-weight: 300;
+	align-items: baseline;
+}
+
+.list-item__container > *:first-child {
+	margin-right: 0.8rem;
+}
+
+.list-item:hover {
+	background: #eae8f3;
+}
+
+.list-item__title {
+	font-size: 1.8rem;
+	margin-bottom: 0.4rem;
+}
+
+.list-item__subtitle {
+	color: #666;
+	font-size: 1.4rem;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.list-title {
+	margin: 3.2rem 0 1.6rem;
+}
+
+.empty-message {
+	margin: 3.2rem 0;
+}

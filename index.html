@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"
+			integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="icon" href="image/startup.png" />
+		<title>Recipe - app</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<a href="./"
+					><h1 class="header header__title">
+						The Recipe App
+					</h1></a
+				>
+				<h2 class="header__subtitle">Add your recipes</h2>
+			</div>
+		</header>
+		<div class="actions">
+			<div class="actions__container">
+				<input
+					id="search-text"
+					type="text"
+					placeholder="&#xF002; Search"
+					style="font-family: Arial, FontAwesome"
+					class="input"
+				/>
+			</div>
+		</div>
+		<div class="container">
+			<div id="recipeEl"></div>
+			<div>
+				<button id="add-recipe-btn" class="button">
+					Add Recipe
+				</button>
+			</div>
+		</div>
+		<script src="./scripts/uuidv4.js"></script>
+		<script src="./scripts/recipe-functions.js"></script>
+		<script src="./scripts/app.js"></script>
+	</body>
+</html>
